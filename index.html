@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Guru_Ghasidas_University_Insignia.svg/1200px-Guru_Ghasidas_University_Insignia.svg.png" alt="University Logo" id="logo">
+    <h1>गुरु घासीदास विश्‍वविद्यालय, बिलासपुर</h1>
+  </div>
+  <div class="main-content">
+    <h3>Admission Registration Form 2023-24 for BTech</h3>
+    <form action="">
+      <fieldset>
+        <label for="name">Name
+          <input type="name" id="name" required>
+        </label>
+        <label for="father-name" >Father's Name
+          <input type="text" id="father-name" required>
+        </label>
+        <label for="mother-name">Mother's Name
+          <input type="text" id="mother-name" required>
+        </label>
+        <label for="gender">Gender
+          <select name="gender" id="gender" >
+            <option value="">Select Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+          </select>
+        </label>
+        
+      </fieldset>
+        <label for="exam">Exam
+          <select name="exam" id="exam">
+            <option value="">Select Your Exam</option>
+            <option value="Jee">JEE Mains</option>
+            <option value="university-exam">University Entrance</option>
+          </select>
+        </label>
+        <label for="rank">Rank(All India Rank)
+          <input type="number" min="1">
+        </label>
+        <label for="course">Course 
+          <select name="course" id="course">
+            <option value="">Select Your BTech Course</option>
+            <option value="cs">Computer Science and Engineering</option>
+            <option value="it">Information Technology</option>
+            <option value="ece">Electronics and Communication Engineering</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="civil-e">Civil Engineering</option>
+            <option value="chemical-e">Chemical Engineering</option>
+          </select>
+        </label>
+      <fieldset>
+        <label for="report-card">Attach Your Report Card 
+          <input type="file" required>
+        </label>
+        <label for="mobile-number">Mobile Number 
+          <input type="tel" required id="mobile-number" pattern="[0,9]{10}">
+        </label>
+        <label for="email">Email 
+          <input type="email" name="email" id="email" required>
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions">
+          <input type="checkbox" id="terms-and-conditions" required>
+          You agree our <a href="#">Terms and Conditions</a>
+        </label>
+        <label for="submit">
+          <input type="submit" id="submit">
+        </label>
+      </fieldset>
+    </form>
+  </div>
+
+
+  <script>
+    alert("This Website is developed as a project. Do not enter sensitive information.")
+  </script>
+</body>
+</html>
